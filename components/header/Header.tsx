@@ -7,6 +7,7 @@ export default () => {
       <nav className="flex gap-4">
         <Link href="/">Home</Link>
         <Link href="/blog">Blog</Link>
+        <Link href="/dashboard">Dashboard</Link>
       </nav>
     </header>
   );
