@@ -9,6 +9,12 @@ export default function BlogItem({ post }: { post: any }) {
         scale: 1.08,
         transition: { duration: 0.3 },
       }}
+      initial={{ opacity: 0.5, scale: 0.5 }}
+      whileInView={{
+        opacity: 1,
+        scale: 1,
+        transition: { type: "spring", stiffness: 200 },
+      }}
     >
       <Link className="p-5 block" href={`/blog/${post.id}`}>
         {post.title}
